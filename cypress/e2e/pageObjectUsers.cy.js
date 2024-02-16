@@ -15,11 +15,11 @@ describe('Check Login', () => {
             const password = user.password;
 
             loginPage.loginUser(useremail, password);
-            cy.wait(5000);
+            cy.wait(4000);
             cy.url().should('include', 'homepage');
     
                 homePage.logout();
-                cy.wait(5000);
+                cy.wait(4000);
 
     });
         });
