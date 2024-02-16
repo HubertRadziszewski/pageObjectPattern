@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cypress:run:asd": "npx cypress run --headless --browser chrome",
     "cypress:open:chrome": "npx cypress run -b chrome --headed",
     "cypress:open:firefox":"npx cypress run -b firefox --headed",
     "cypress:run:chrome":"npx cypress run -b chrome --headed --spec cypress/e2e/pageObjectUsers.cy.js",
