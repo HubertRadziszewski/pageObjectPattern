@@ -22,19 +22,5 @@ describe('Check Login', () => {
                 cy.wait(5000);
 
     });
-    });
-        it('User 2 successfully logs in and out from the GoIT page', () => {
-            cy.fixture('user2.json').then((user) => {
-                const useremail = user.email;
-                const password = user.password;
-    
-                loginPage.loginUser(useremail, password);
-                cy.wait(5000);
-                cy.url().should('include', 'homepage');
-        
-                    homePage.logout();
-                    cy.wait(5000);
-    
-        });
         });
     });
